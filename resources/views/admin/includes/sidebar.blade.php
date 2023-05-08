@@ -16,8 +16,8 @@
                         <i class="ti-layout-grid2"></i><span class="hide-menu">Category Module</span>
                     </a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="{{ route('add-category') }}">Add Category</a></li>
-                        <li><a href="{{ route('manage-category') }}">Manage Category</a></li>
+{{--                        <li><a href="{{ route('add-category') }}">Add Category</a></li>--}}
+{{--                        <li><a href="{{ route('manage-category') }}">Manage Category</a></li>--}}
                     </ul>
                 </li>
                 <li>
