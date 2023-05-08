@@ -4,10 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class CategoryController extends Controller
 {
     public function index(){
-        return view('admin.home.index');
+        return view('admin.category.add-category');
     }
-
 }
