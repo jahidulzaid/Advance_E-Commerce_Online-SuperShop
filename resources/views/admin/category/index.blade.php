@@ -10,13 +10,13 @@
                     <form action="" method="post" class="form-horizontal p-t-20" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group row">
-                            <label for="exampleInputuname3" class="col-sm-3 control-label">Category Name <span class="text-danger">*</span></label>
+                            <label  class="col-sm-3 control-label">Category Name <span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="name" placeholder="Category Name">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="exampleInputEmail3" class="col-sm-3 control-label">Category Description<span class="text-danger">*</span></label>
+                            <label class="col-sm-3 control-label">Category Description<span class="text-danger">*</span></label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" name="description" placeholder="Category Description"></textarea>
                             </div>

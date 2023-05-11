@@ -36,6 +36,8 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
     Route::get('/dashboard/category/add', [CategoryController::class, 'index'])->name('category.add');
     Route::get('/dashboard/category/manage', [CategoryController::class, 'manage'])->name('category.manage');
 
+    Route::post('/dashboard/category/add', [CategoryController::class, 'addCategory'])->name('category.manage');
+
 
 
 
