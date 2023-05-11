@@ -19,13 +19,18 @@
                     </tr>
                     </thead>
                     <tbody>
+                    @php
+                        $i = 1;
+                    @endphp
+                    @foreach($categories as $category)
                     <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>
+
+                        <td>{{ $i++ }}</td>
+                        <td>{{ $category->name }}</td>
+                        <td>{{ $category->description }}</td>
+                        <td>{{ $category->image }}</td>
+                        <td>{{ $category->status }}</td>
+                        <td class="me-3">
                             <a href="" class="btn btn-success btn-sm" >
                                 <i class="ti-eraser"></i>
                             </a>
@@ -34,6 +39,7 @@
                             </a>
                         </td>
                     </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>
