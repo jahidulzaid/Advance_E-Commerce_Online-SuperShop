@@ -16,7 +16,7 @@ class CategoryController extends Controller
         ]);
     }
 
-    public function addCategory(Request $request){
+    public function create(Request $request){
         Category::addCategory($request);
         return back()->with('message', 'New Category Added');
 

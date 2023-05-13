@@ -33,10 +33,11 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified'])-
 
 
     //for category
-    Route::get('/dashboard/category/add', [CategoryController::class, 'index'])->name('category.add');
-    Route::get('/dashboard/category/manage', [CategoryController::class, 'manage'])->name('category.manage');
+    Route::get('/category/add', [CategoryController::class, 'index'])->name('category.add');
+    Route::post('/category/new', [CategoryController::class, 'create'])->name('category.new');
+    Route::get('/category/manage', [CategoryController::class, 'manage'])->name('category.manage');
 
-    Route::post('/dashboard/category/add', [CategoryController::class, 'addCategory'])->name('add.category');
+
 
 
 
