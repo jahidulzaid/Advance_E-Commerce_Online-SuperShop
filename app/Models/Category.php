@@ -9,12 +9,12 @@ class Category extends Model
 {
     use HasFactory;
     public static $categories;
-    public static function addCategory($data){
+    public static function newCategory($data){
         self::$categories = new Category();
-        self::$categories -> name = $data -> name;
-        self::$categories -> description = $data -> description;
-        self::$categories -> image = saveImage($data);
-        self::$categories -> status = $data -> status;
+        self::$categories -> name           = $data -> name;
+        self::$categories -> description    = $data -> description;
+        self::$categories -> image          = saveImage($data);
+        self::$categories -> status         = $data -> status;
         self::$categories -> save();
     }
 

@@ -7,18 +7,19 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('admin.category.index');
     }
-    public function manage(){
+    public function create(Request $request)
+    {
+        Category::newCategory($request);
+        return back()->with('message', 'New Category created successfully.');
+    }
+    public function manage()
+    {
         return view('admin.category.manage',[
             'categories'=>Category::all()
         ]);
-    }
-
-    public function create(Request $request){
-        Category::addCategory($request);
-        return back()->with('message', 'New Category Added');
-
     }
 }
