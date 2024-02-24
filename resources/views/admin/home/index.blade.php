@@ -2,7 +2,7 @@
 @section('body')
     <div class="row page-titles">
         <div class="col-md-5 align-self-center">
-            <h4 class="text-themecolor">Dashboard 1</h4>
+            <h4 class="text-themecolor">Dashboard</h4>
         </div>
         <div class="col-md-7 align-self-center text-end">
             <div class="d-flex justify-content-end align-items-center">
@@ -53,7 +53,7 @@
                             <div class="d-flex no-block align-items-center">
                                 <div>
                                     <h3><i class="icon-note"></i></h3>
-                                    <p class="text-muted">NEW Order</p>
+                                    <p class="text-muted">New Order</p>
                                 </div>
                                 <div class="ms-auto">
                                     <h2 class="counter text-cyan">169</h2>
@@ -80,7 +80,7 @@
                             <div class="d-flex no-block align-items-center">
                                 <div>
                                     <h3><i class="icon-doc"></i></h3>
-                                    <p class="text-muted">NEW Product</p>
+                                    <p class="text-muted">New Product</p>
                                 </div>
                                 <div class="ms-auto">
                                     <h2 class="counter text-purple">157</h2>
